@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { Menu, X, Scissors } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -22,33 +21,39 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-dark/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-dark border-b border-gold/30`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+        {/* Text Logo */}
         <a href="#home" className="flex items-center gap-2">
-          <img src={logo} alt="ANIQ Studio" className="h-12 md:h-14" />
+          <Scissors className="w-5 h-5 text-gold" />
+          <span className="font-logo text-xl tracking-wider text-gold">ANIQ</span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-sm font-body uppercase tracking-widest text-dark-foreground/80 hover:text-gold transition-colors duration-300"
-            >
-              {link.label}
-            </a>
+        <div className="hidden md:flex items-center gap-2">
+          {navLinks.map((link, i) => (
+            <span key={link.label} className="flex items-center gap-2">
+              <a
+                href={link.href}
+                className="text-sm font-body tracking-widest text-dark-foreground/80 hover:text-gold transition-colors duration-300"
+              >
+                {link.label}
+              </a>
+              {i < navLinks.length - 1 && (
+                <span className="text-dark-foreground/30 text-xs">-</span>
+              )}
+            </span>
           ))}
-          <a
-            href="#contact"
-            className="px-6 py-2.5 bg-gold text-secondary-foreground font-body text-sm font-semibold uppercase tracking-wider rounded-sm hover:bg-gold-hover transition-all duration-300 gold-glow-hover"
-          >
-            Book Now
-          </a>
         </div>
+
+        {/* Book Now - gold border button */}
+        <a
+          href="#contact"
+          className="hidden md:inline-block px-6 py-2.5 border border-gold/70 text-gold font-body text-sm tracking-wider rounded-sm gold-shimmer-hover transition-all duration-300"
+        >
+          Book Now
+        </a>
 
         {/* Mobile Toggle */}
         <button
@@ -76,7 +81,7 @@ const Navbar = () => {
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
-              className="px-8 py-3 bg-gold text-secondary-foreground font-body text-sm font-semibold uppercase tracking-wider rounded-sm"
+              className="px-8 py-3 border border-gold/70 text-gold font-body text-sm tracking-wider rounded-sm gold-shimmer-hover"
             >
               Book Now
             </a>

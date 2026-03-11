@@ -125,6 +125,39 @@
   .gold-glow-hover:hover {
     box-shadow: 0 0 20px hsla(40, 46%, 56%, 0.3);
   }
+  .gold-shimmer-hover {
+    position: relative;
+    overflow: hidden;
+    @apply transition-all duration-300;
+  }
+  .gold-shimmer-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsla(40, 46%, 56%, 0.3),
+      transparent
+    );
+    transition: none;
+  }
+  .gold-shimmer-hover:hover {
+    box-shadow: 0 0 15px hsla(40, 46%, 56%, 0.25), inset 0 0 15px hsla(40, 46%, 56%, 0.08);
+    border-color: hsl(var(--gold));
+    text-shadow: 0 0 8px hsla(40, 46%, 56%, 0.4);
+  }
+  .gold-shimmer-hover:hover::before {
+    animation: button-shimmer 1.2s ease-in-out infinite;
+  }
+}
+
+@keyframes button-shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
 
 html {
