@@ -8,7 +8,7 @@ const HeroSection = () => {
         <img
           src={salonHeroBg}
           alt="ANIQ Studio Interior"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[70%_center] md:object-center"
         />
         {/* Dark gradient from bottom for text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/20" />
