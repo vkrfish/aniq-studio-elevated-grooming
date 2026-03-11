@@ -20,9 +20,14 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" strokeWidth={1.5} />
-                <span className="text-dark-foreground/60 font-body text-sm">
+                <a 
+                  href="https://www.google.com/maps/dir/14.9047134,78.0050003/14.9035074,78.0042846/@14.9053538,77.9999436,16z?entry=ttu&g_ep=EgoyMDI2MDMwOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark-foreground/60 font-body text-sm hover:text-gold transition-colors"
+                >
                   Krishna Puram, Tadipatri,<br />Andhra Pradesh, India
-                </span>
+                </a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" strokeWidth={1.5} />

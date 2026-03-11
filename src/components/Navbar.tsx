@@ -21,27 +21,42 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-dark border-b border-gold/30`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? "bg-dark/95 backdrop-blur-md py-3 shadow-lg border-b border-gold/20" : "bg-gradient-to-b from-black/80 to-transparent py-5"
+      }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+      <div className="container mx-auto flex items-center justify-between px-4 md:px-12">
         {/* Text Logo */}
-        <a href="#home" className="flex items-center gap-2">
-          <Scissors className="w-5 h-5 text-gold" />
-          <span className="font-logo text-xl tracking-wider text-gold">ANIQ</span>
+        <a href="#home" className="flex items-center gap-4 group">
+          <div className="relative">
+            <svg 
+              viewBox="0 0 100 100" 
+              className="w-9 h-9 text-gold transition-transform duration-500 group-hover:scale-110"
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="35" cy="25" r="12" stroke="currentColor" strokeWidth="3"/>
+              <circle cx="65" cy="25" r="12" stroke="currentColor" strokeWidth="3"/>
+              <path d="M40 35L70 85" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+              <path d="M60 35L30 85" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+              <circle cx="50" cy="45" r="2.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <span className="font-logo text-3xl tracking-[0.25em] gold-text">ANIQ</span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link, i) => (
-            <span key={link.label} className="flex items-center gap-2">
+            <span key={link.label} className="flex items-center gap-6">
               <a
                 href={link.href}
-                className="text-sm font-body tracking-widest text-dark-foreground/80 hover:text-gold transition-colors duration-300"
+                className="text-[11px] uppercase font-body tracking-[0.3em] text-white/70 hover:text-gold transition-colors duration-300"
               >
                 {link.label}
               </a>
               {i < navLinks.length - 1 && (
-                <span className="text-dark-foreground/30 text-xs">-</span>
+                <span className="text-gold/40 text-[10px]">•</span>
               )}
             </span>
           ))}
@@ -49,8 +64,10 @@ const Navbar = () => {
 
         {/* Book Now - gold border button */}
         <a
-          href="#contact"
-          className="hidden md:inline-block px-6 py-2.5 border border-gold/70 text-gold font-body text-sm tracking-wider rounded-sm gold-shimmer-hover transition-all duration-300"
+          href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aniq%20Studio%20Unisex%20Salon.%0AName:%0AService%20Required:%0APreferred%20Date:%0APreferred%20Time:"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:inline-block px-10 py-3 border border-gold/30 text-white font-body text-[11px] tracking-[0.3em] uppercase rounded-sm hover:bg-gold/10 hover:border-gold transition-all duration-500"
         >
           Book Now
         </a>
@@ -79,7 +96,9 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contact"
+              href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aniq%20Studio%20Unisex%20Salon.%0AName:%0AService%20Required:%0APreferred%20Date:%0APreferred%20Time:"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
               className="px-8 py-3 border border-gold/70 text-gold font-body text-sm tracking-wider rounded-sm gold-shimmer-hover"
             >

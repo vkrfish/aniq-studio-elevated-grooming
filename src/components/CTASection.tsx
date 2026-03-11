@@ -14,13 +14,17 @@ const CTASection = () => {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="tel:+919876543210"
+            href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aniq%20Studio%20Unisex%20Salon.%0AName:%0AService%20Required:%0APreferred%20Date:%0APreferred%20Time:"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-10 py-4 bg-gold text-secondary-foreground font-body text-sm font-semibold uppercase tracking-wider rounded-sm hover:bg-gold-hover transition-all duration-300 gold-glow-hover"
           >
-            Call Now
+            Book Appointment
           </a>
           <a
-            href="#contact"
+            href="https://www.google.com/maps/dir/14.9047134,78.0050003/14.9035074,78.0042846/@14.9053538,77.9999436,16z?entry=ttu&g_ep=EgoyMDI2MDMwOS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-10 py-4 border border-gold/50 text-primary-foreground font-body text-sm font-semibold uppercase tracking-wider rounded-sm hover:bg-gold/10 transition-all duration-300"
           >
             Get Directions

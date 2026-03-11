@@ -91,8 +91,10 @@ const ServicesSection = () => {
               Can't find what you need? We create personalized grooming packages just for you.
             </p>
             <a
-              href="#contact"
-              className="px-6 py-3 bg-gold text-secondary-foreground font-body text-sm font-semibold uppercase tracking-wider rounded-sm hover:bg-gold-hover transition-all duration-300"
+              href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Aniq%20Studio%20Unisex%20Salon.%0AName:%0AService%20Required:%0APreferred%20Date:%0APreferred%20Time:"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-gold text-secondary-foreground font-body text-sm font-semibold uppercase tracking-wider rounded-sm hover:bg-gold-hover transition-all duration-500"
             >
               Get in Touch
             </a>
