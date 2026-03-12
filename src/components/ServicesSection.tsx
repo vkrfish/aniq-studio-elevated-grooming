@@ -47,7 +47,7 @@ const ServicesSection = () => {
             <div className="h-px w-12 bg-gold" />
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-            Our <span className="gold-text italic">Services</span>
+            Our <span className="gold-text italic">Premium Services</span>
           </h2>
           <p className="text-muted-foreground font-body">
             Complete grooming and beauty services for men & women under one roof.

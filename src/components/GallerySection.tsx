@@ -4,10 +4,10 @@ import salonLounge from "@/assets/salon-lounge.png";
 import salonLogoWall from "@/assets/salon-logo-wall.png";
 
 const images = [
-  { src: salonInterior, alt: "ANIQ Studio - Main Interior", span: "md:col-span-2 md:row-span-2" },
-  { src: salonChairs, alt: "ANIQ Studio - Styling Chairs", span: "" },
-  { src: salonLogoWall, alt: "ANIQ Studio - Brand Wall", span: "" },
-  { src: salonLounge, alt: "ANIQ Studio - Lounge Area", span: "md:col-span-2" },
+  { src: salonInterior, alt: "ANIQ Studio Luxury Salon Interior and Reception", span: "md:col-span-2 md:row-span-2" },
+  { src: salonChairs, alt: "Professional Styling Stations at ANIQ Studio", span: "" },
+  { src: salonLogoWall, alt: "ANIQ Studio Branding and Logo Wall", span: "" },
+  { src: salonLounge, alt: "Comfortable Waiting Lounge at ANIQ Studio Salon", span: "md:col-span-2" },
 ];
 
 const GallerySection = () => {

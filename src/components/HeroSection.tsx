@@ -30,7 +30,7 @@ const HeroSection = () => {
           <img
             key={img}
             src={img}
-            alt={`ANIQ Studio Interior ${index + 1}`}
+            alt={img.split('/').pop()?.split('.')[0]?.replace(/-/g, ' ') || `ANIQ Studio Service Image ${index + 1}`}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
               index === currentImage ? "opacity-100" : "opacity-0"
             }`}
@@ -48,8 +48,8 @@ const HeroSection = () => {
             className="text-5xl md:text-6xl lg:text-7xl font-heading leading-[1] opacity-0 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            <span className="gold-text italic font-extralight block mb-1">Premium</span>
-            <span className="gold-text font-bold tracking-tight">Grooming Experience</span>
+            <span className="gold-text italic font-extralight block mb-1">ANIQ Studio</span>
+            <span className="gold-text font-bold tracking-tight">Premium Unisex Salon</span>
           </h1>
 
           <p
