@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="ANIQ Studio" className="h-16 mb-6" />
+            <img src={logo} alt="ANIQ Studio" className="h-16 w-auto mb-6" width="160" height="64" />
             <p className="text-dark-foreground/60 font-body text-sm leading-relaxed">
               Premium grooming studio for men & women. Where luxury meets perfection in Krishna Puram, Tadipatri.
             </p>
