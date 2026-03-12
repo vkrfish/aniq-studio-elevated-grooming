@@ -9,7 +9,7 @@ const CTASection = () => {
         <h2 className="text-4xl md:text-6xl font-heading font-bold text-primary-foreground mb-6">
           Ready to <span className="gold-text italic">Transform</span>?
         </h2>
-        <p className="text-primary-foreground/70 font-body text-lg max-w-lg mx-auto mb-10">
+        <p className="text-primary-foreground font-body text-lg max-w-lg mx-auto mb-10">
           Book your appointment today and experience the ANIQ difference. Walk in confident, walk out stunning.
         </p>
         <div className="flex flex-wrap justify-center gap-4">

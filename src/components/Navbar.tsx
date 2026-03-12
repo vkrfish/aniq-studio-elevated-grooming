@@ -34,6 +34,8 @@ const Navbar = () => {
               className="w-9 h-9 text-gold transition-transform duration-500 group-hover:scale-110"
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
             >
               <circle cx="35" cy="25" r="12" stroke="currentColor" strokeWidth="3"/>
               <circle cx="65" cy="25" r="12" stroke="currentColor" strokeWidth="3"/>
