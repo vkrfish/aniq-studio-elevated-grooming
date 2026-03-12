@@ -59,7 +59,11 @@ const Footer = () => {
               ))}
             </div>
             <div className="flex gap-4 mt-6">
-              <a href="#" className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center hover:bg-gold/10 transition-all">
+              <a 
+                href="#" 
+                className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center hover:bg-gold/10 transition-all"
+                aria-label="Follow us on Instagram"
+              >
                 <Instagram className="w-4 h-4 text-gold" />
               </a>
             </div>

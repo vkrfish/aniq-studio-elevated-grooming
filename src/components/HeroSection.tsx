@@ -31,6 +31,8 @@ const HeroSection = () => {
             key={img}
             src={img}
             alt={img.split('/').pop()?.split('.')[0]?.replace(/-/g, ' ') || `ANIQ Studio Service Image ${index + 1}`}
+            fetchpriority={index === 0 ? "high" : "auto"}
+            loading={index === 0 ? "eager" : "lazy"}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
               index === currentImage ? "opacity-100" : "opacity-0"
             }`}

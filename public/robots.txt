@@ -9,4 +9,4 @@ Disallow: /dashboard/
 Disallow: /_next/
 
 # Point to your sitemap
-Sitemap: https://aniq-studio.vercel.app/sitemap.xml
+Sitemap: https://aniq-studio-elevated-grooming-2d9x.vercel.app/sitemap.xml
