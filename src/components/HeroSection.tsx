@@ -1,4 +1,4 @@
-import salonHeroBg from "@/assets/salon-hero-bg.png";
+import salonHeroBg from "@/assets/salon-hero-bg.webp";
 
 const HeroSection = () => {
   return (
