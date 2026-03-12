@@ -22,7 +22,7 @@
     --secondary-foreground: 0 0% 100%;
 
     --muted: 30 18% 91%;
-    --muted-foreground: 0 0% 30%; /* Darker for accessibility (AA compliant) */
+    --muted-foreground: 0 0% 25%; /* Ultra-dark for contrast */
 
     --accent: 278 38% 38%;
     --accent-foreground: 0 0% 100%;
@@ -39,8 +39,8 @@
     --dark: 0 0% 5%;
     --dark-foreground: 0 0% 96%;
 
-    --gold: 40 46% 30%; /* Darkened to meet 4.5:1 ratio on light backgrounds */
-    --gold-hover: 40 42% 25%;
+    --gold: 40 46% 25%; /* Even darker for safe AA compliance */
+    --gold-hover: 40 42% 20%;
     --gold-glow: 40 46% 56%;
 
     --cream: 33 33% 90%;

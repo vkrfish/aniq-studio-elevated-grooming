@@ -1,12 +1,4 @@
-# Allow all crawlers to index the full site
 User-agent: *
 Allow: /
 
-# Block admin and private routes from being indexed (preemptive)
-Disallow: /admin/
-Disallow: /api/
-Disallow: /dashboard/
-Disallow: /_next/
-
-# Point to your sitemap
-Sitemap: https://aniq-studio-elevated-grooming-2d9x.vercel.app/sitemap.xml
+Sitemap: https://aniq-studio.vercel.app/sitemap.xml

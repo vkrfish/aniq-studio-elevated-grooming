@@ -8,7 +8,23 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="ANIQ Studio" className="h-16 w-auto mb-6" width={160} height={64} />
+            <div className="flex items-center gap-3 mb-6">
+              <svg 
+                viewBox="0 0 100 100" 
+                className="w-12 h-12 text-gold"
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+              >
+                <circle cx="35" cy="25" r="12" stroke="currentColor" strokeWidth="3"/>
+                <circle cx="65" cy="25" r="12" stroke="currentColor" strokeWidth="3"/>
+                <path d="M40 35L70 85" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+                <path d="M60 35L30 85" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+                <circle cx="50" cy="45" r="2.5" fill="currentColor"/>
+              </svg>
+              <span className="text-dark-foreground font-heading font-bold text-xl tracking-wider">ANIQ <span className="gold-text">STUDIO</span></span>
+            </div>
             <p className="text-dark-foreground/80 font-body text-sm leading-relaxed">
               Premium grooming studio for men & women. Where luxury meets perfection in Krishna Puram, Tadipatri.
             </p>
