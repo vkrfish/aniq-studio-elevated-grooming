@@ -1,43 +1,17 @@
-import { useState, useEffect } from "react";
 import salonHeroBg from "@/assets/salon-hero-bg.png";
-import salonInterior from "@/assets/salon-interior.png";
-import salonLounge from "@/assets/salon-lounge.png";
-import salonLogoWall from "@/assets/salon-logo-wall.png";
-import chatGPTImage from "@/assets/ChatGPT Image Mar 12, 2026, 12_05_42 AM.png";
 
 const HeroSection = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const images = [
-    salonHeroBg,
-    salonInterior,
-    salonLounge,
-    salonLogoWall,
-    chatGPTImage,
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [images.length]);
-
   return (
     <section id="home" className="relative min-h-screen flex items-end overflow-hidden">
-      {/* Background Image Slider */}
+      {/* Background Image */}
       <div className="absolute inset-0">
-        {images.map((img, index) => (
-          <img
-            key={img}
-            src={img}
-            alt={img.split('/').pop()?.split('.')[0]?.replace(/-/g, ' ') || `ANIQ Studio Service Image ${index + 1}`}
-            fetchPriority={index === 0 ? "high" : "auto"}
-            loading={index === 0 ? "eager" : "lazy"}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              index === currentImage ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        ))}
+        <img
+          src={salonHeroBg}
+          alt="ANIQ Studio Luxury Salon Interior"
+          fetchPriority="high"
+          loading="eager"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         {/* Top gradient for navbar readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent z-10" />
         {/* Bottom gradient for text readability */}
