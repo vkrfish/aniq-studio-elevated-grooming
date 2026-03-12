@@ -103,8 +103,8 @@
   .dark-luxury {
     background-color: hsl(var(--dark));
     color: hsl(var(--dark-foreground));
-    --gold: 40 46% 60%; /* Brighter gold for better contrast on dark backgrounds */
-    --muted-foreground: 0 0% 70%; /* Lighter muted text for dark backgrounds */
+    --gold: 40 46% 75%; /* Brighter gold for better contrast on dark backgrounds */
+    --muted-foreground: 0 0% 80%; /* Lighter muted text for dark backgrounds */
   }
   .section-padding {
     @apply py-20 md:py-28 px-4;

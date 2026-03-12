@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={salonHeroBg}
+          src="/salon-hero-bg.webp"
           alt="ANIQ Studio Luxury Salon Interior"
           fetchPriority="high"
           loading="eager"
