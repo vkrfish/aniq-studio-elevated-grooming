@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="ANIQ Studio" className="h-16 w-auto mb-6" width="160" height="64" />
-            <p className="text-dark-foreground/60 font-body text-sm leading-relaxed">
+            <img src={logo} alt="ANIQ Studio" className="h-16 w-auto mb-6" width={160} height={64} />
+            <p className="text-dark-foreground/80 font-body text-sm leading-relaxed">
               Premium grooming studio for men & women. Where luxury meets perfection in Krishna Puram, Tadipatri.
             </p>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gold/10 mt-12 pt-8 text-center">
-          <p className="text-dark-foreground/40 font-body text-xs">
+          <p className="text-dark-foreground/60 font-body text-xs">
             © {new Date().getFullYear()} ANIQ Studio. All rights reserved.
           </p>
         </div>
