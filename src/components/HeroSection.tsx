@@ -1,10 +1,12 @@
+import salonHeroBg from "@/assets/salon-hero-bg.webp";
+
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-end overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/salon-hero-bg.webp"
+          src={salonHeroBg}
           alt="ANIQ Studio Luxury Salon Interior"
           fetchPriority="high"
           loading="eager"

@@ -39,8 +39,7 @@
     --dark: 0 0% 5%;
     --dark-foreground: 0 0% 96%;
 
-    --gold: 40 46% 30%; /* For light backgrounds */
-    --gold-light: 40 46% 60%; /* For dark backgrounds */
+    --gold: 40 46% 30%; /* Darkened to meet 4.5:1 ratio on light backgrounds */
     --gold-hover: 40 42% 25%;
     --gold-glow: 40 46% 56%;
 
@@ -96,21 +95,10 @@
     background: linear-gradient(135deg, hsl(40, 46%, 56%), hsl(40, 50%, 68%), hsl(40, 46%, 56%));
   }
   .gold-text {
-    background: linear-gradient(135deg, hsl(var(--gold)), hsl(40, 50%, 68%), hsl(var(--gold)));
+    background: linear-gradient(135deg, hsl(40, 46%, 56%), hsl(40, 50%, 68%), hsl(40, 46%, 50%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-  }
-  .dark-luxury .gold-text,
-  .dark .gold-text {
-    background: linear-gradient(135deg, hsl(var(--gold-light)), hsl(40, 50%, 80%), hsl(var(--gold-light)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .dark-luxury .text-gold,
-  .dark .text-gold {
-    color: hsl(var(--gold-light));
   }
   .dark-luxury {
     background-color: hsl(var(--dark));
